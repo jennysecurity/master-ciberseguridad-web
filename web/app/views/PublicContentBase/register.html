@@ -36,6 +36,11 @@
                 alert("Both passwords should be the same");
                 return false;
             }
+            var type1 = document.forms["reg-form"]["type"].value;
+            if(type1 == ""){
+            	  alert("Choose the type of user");
+                  return false
+             }
 
             return true;
         }
